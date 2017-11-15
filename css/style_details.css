@@ -43,6 +43,7 @@ body {
 .goods-name {
     margin-bottom: 0.2rem;
     line-height: 1.2em;
+    font-weight: 700;
 }
 .goods-price {
     color: #2389e4;
