@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>订单管理</title>
+    <script>
+        (function (global) {
+            function remChange() {
+                document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+            }
+            remChange();
+            global.addEventListener('resize', remChange, false);
+        })(window);
+    </script>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body style="visibility:hidden;">
+    <!-- 页面html代码开始 -->
+    <div class="view-wrapper">
+        <div class="order-bar">
+            <ul>
+                <!-- 每一个 li 对应一个 .order-content -->
+                <li class="act">商品订单</li>
+                <li>号卡订单</li>
+                <li>流量订单</li>
+            </ul>
+        </div>
+        <div class="order-section">
+            <div class="order-content">
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待支付
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-03.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                    <div class="order-panel-handle">
+                        <span class="order-btn" href="">立即支付</span>
+                        <span class="order-btn" href="">取消订单</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-01.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-02.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已完成
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-05.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已取消
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-04.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="order-content none">
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待支付
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-03.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                    <div class="order-panel-handle">
+                        <span class="order-btn" href="">立即支付</span>
+                        <span class="order-btn" href="">取消订单</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-01.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-02.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已完成
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-05.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已取消
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-04.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                        </div>
+                </div>
+            </div>
+            <div class="order-content none">
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待支付
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-03.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                    <div class="order-panel-handle">
+                        <span class="order-btn" href="">立即支付</span>
+                        <span class="order-btn" href="">取消订单</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            待发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-01.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已发货
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-02.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已完成
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-05.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                    </div>
+                </div>
+                <div class="order-panel">
+                    <div class="order-panel-title">
+                        <div class="order-date">
+                            2017-01-13 17:20:33
+                        </div>
+                        <div class="order-status">
+                            已取消
+                        </div>
+                    </div>
+                    <div class="order-panel-details">
+                        <a href="order-details-04.html">
+                            <div class="goods-img">
+                                <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                            </div>
+                            <div class="goods-text">
+                                <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                                <p class="goods-price">￥4488.00</p>
+                            </div>
+                            <div class="goods-quantity">
+                                x<span>1</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="order-panel-total">
+                        合计：<span>￥4488.00</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面html代码结束 -->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementsByTagName('body')[0].style.visibility = 'visible';
+        }, 100)
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

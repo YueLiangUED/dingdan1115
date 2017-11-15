@@ -1,0 +1,116 @@
+@charset "utf-8";
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; 
+} 
+body {
+    background-color: #f3f3f3;
+}
+.order-bar {
+    height: 0.8rem;
+    margin-bottom: 0.2rem;
+    background-color: #fff;
+}
+.order-bar ul {
+    display: flex;
+    height: 100%;
+}
+.order-bar ul li {
+    height: 0.76rem;
+    line-height: 0.76rem;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 0.3rem;
+    color: #333;
+    text-align: center;
+}
+.order-bar ul li.act{
+    border-bottom: 0.04rem solid #2196f3;
+    color: #2196f3;
+}
+.order-panel {
+    margin-bottom: 0.2rem;
+}
+.order-panel-title {
+    height: 0.8rem;
+    padding: 0 0.4rem;
+    line-height: 0.8rem;
+    font-size: 0.24rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.order-status {
+    color: #2196f3;
+}
+.order-panel-details {
+    display: flex;
+    background-color: #fafafa;
+}
+.order-panel-details a {
+    display: flex;
+    width: 100%;
+    padding: 0.15rem 0.4rem;
+    box-sizing: border-box;
+}
+.goods-img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goods-text {
+    width: 3.7rem;
+    color: #333333;
+    font-size: 0.24rem;
+}
+.goods-name {
+    margin-bottom: 0.2rem;
+    line-height: 1.2em;
+}
+.goods-price {
+    color: #2389e4;
+    font-size: 0.3rem;
+}
+.goods-quantity {
+    padding-top: 0.1rem;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 0.24rem;
+    color: #9a9a9a;
+}
+.order-panel-total {
+    height: 0.8rem;
+    padding: 0 0.4rem;
+    line-height: 0.8rem;
+    border-bottom: 0.5px solid #e8e8e8;
+    background-color: #fff;
+    color: #2196f3;
+    font-size: 0.24rem;
+    text-align: right;
+}
+.order-panel-total span {
+    font-size: 0.3rem;
+}
+.order-panel-handle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 0.8rem;
+    background-color: #fff;
+    border-bottom: 0.5px solid #e8e8e8;
+}
+.order-btn {
+    width: 1.36rem;
+    height: 0.6rem;
+    margin-left: 0.24rem;
+    border: 0.5px solid #adadad;
+    border-radius: 0.3rem;
+    color: #333;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.6rem;
+}

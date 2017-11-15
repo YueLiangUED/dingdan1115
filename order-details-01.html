@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_details.css" />
+    <title>订单详情</title>
+    <script>
+        (function (global) {
+            function remChange() {
+                document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+            }
+            remChange();
+            global.addEventListener('resize', remChange, false);
+        })(window);
+    </script>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body style="visibility:hidden;">
+    <!-- 页面html代码开始 -->
+    <div class="view-wrapper">
+        <div class="logistics">
+            <div class="logistics-address">
+                <div class="logistics-address-icon"></div>
+                <div class="logistics-address-text">
+                    <div class="consignee">
+                        <div class="consignee-name">
+                            收货人：<span>张三</span> 
+                        </div>
+                        <div class="consignee-tel">
+                            18812340000
+                        </div>
+                    </div>
+                    <div class="logistics-address-inf">
+                        收货地址：<span>北京市 东城区 东中街58号美惠大厦 北京市 东城区 东中街58号美惠大厦</span>
+                    </div>
+                </div>
+            </div>
+            <div class="logistics-step">
+                <div class="logistics-step-left">
+                    <div class="logistics-step-icon"></div>
+                    <div class="logistics-step-text">
+                        <div class="logistics-step-details">您的订单开始处理。</div>
+                        <div class="logistics-step-time">2017-01-13  17:20:33</div>
+                    </div>
+                </div>
+                <div class="logistics-step-arr"></div>
+            </div>
+        </div>
+        <div class="order-panel">
+            <div class="order-panel-title">
+                <div class="order-date">
+                    2017-01-13 17:20:33
+                </div>
+                <div class="order-status">
+                    待发货
+                </div>
+            </div>
+            <div class="order-panel-details">
+                <div class="goods-img">
+                    <img style="width: 0.74rem;height: 1.49rem;" src="images/goods_01.png" alt="商品1" />
+                </div>
+                <div class="goods-text">
+                    <p class="goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                    <p class="goods-price">￥4488.00</p>
+                </div>
+                <div class="goods-quantity">
+                    x<span>1</span>
+                </div>
+            </div>
+            <div class="order-panel-total">
+                合计：<span>￥4488.00</span>
+            </div>
+        </div>
+        <div class="order-inf">
+            <div class="order-inf-num">订单编号：<span>100861008610086</span></div>
+            <div class="order-inf-sm">订单说明：购机送30个G省内套餐流量。1.当月生效，分三个月赠送，每月10个G；2.在您所使用的流量超出流量套餐之后才可使用，赠送流量不结余。</div>
+            <div>提交时间：<span>2017-01-13 17:20:33</span></div>
+            <div>付款时间：<span>2017-01-13 17:20:33</span></div>
+        </div>
+    </div>
+    <div class="mask"></div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-title">运输中</div>
+                <div class="modal-header-goods">
+                    <div class="modal-header-goods-img">
+                        <img src="images/goods_01.png" alt="" />
+                    </div>
+                    <div class="modal-header-goods-text">
+                        <p class="modal-header-goods-name">【合约购机】iPhone7 4.7英寸 国行 公开版</p>
+                        <p><span>如风达：</span><span>1234567890456779874</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-inf">
+                    <div class="modal-body-inf-item">
+                        <div class="kd-time">
+                            <span>17:38</span>
+                            <span>今天</span>
+                        </div>
+                        <div class="kd-icon">
+                            <i>收</i>
+                        </div>
+                        <div class="kd-text">
+                            <p>已收件！</p>
+                        </div>
+                    </div>
+                    <div class="modal-body-inf-item">
+                        <div class="kd-time">
+                            <span>17:38</span>
+                            <span>今天</span>
+                        </div>
+                        <div class="kd-icon">
+                            <i>派</i>
+                        </div>
+                        <div class="kd-text">
+                            <p><span>【北京市】</span><span>北京市东城区配送员</span> <span>张三 </span><span>18888888888</span><span>正在为您配送</span></p>
+                        </div>
+                    </div>
+                    <div class="modal-body-inf-item">
+                        <div class="kd-time">
+                            <span>17:38</span>
+                            <span>今天</span>
+                        </div>
+                        <div class="kd-icon">
+                            <i>运</i>
+                        </div>
+                        <div class="kd-text">
+                            <p>快件到达北京。</p>
+                        </div>
+                    </div>
+                    <div class="modal-body-inf-item">
+                        <div class="kd-time">
+                            <span>17:38</span>
+                            <span>今天</span>
+                        </div>
+                        <div class="kd-icon">
+                            <i>发</i>
+                        </div>
+                        <div class="kd-text">
+                            <p>订单处理中正在发货。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="solid"></div>
+            </div>
+            <div class="modal-footer">
+                本数据由快递公司提供
+            </div>
+            <div class="modal-close"></div>
+        </div>
+    </div>
+    <!-- 页面html代码结束 -->
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementsByTagName('body')[0].style.visibility = 'visible';
+        }, 100)
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
