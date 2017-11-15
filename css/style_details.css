@@ -99,8 +99,9 @@ body {
     border-bottom: 0.5px solid #e8e8e8;
 }
 .logistics-address-icon {
-    width: 0.34rem;
-    height: 0.42rem;
+    flex-shrink: 1;
+    width: 0.5rem;
+    height: 1rem;
     margin-right: 0.4rem;
     background: url("../images/icon_01.png") no-repeat center;
     background-size: 100%;
@@ -110,7 +111,7 @@ body {
     line-height: 1.4em;
     justify-content: space-between;
     color: #666666;
-    font-size: 0.3rem;
+    font-size: 0.26rem;
 }
 .logistics-address-inf {
     line-height: 1.3em;
@@ -247,15 +248,19 @@ body {
     margin-bottom: 0.65rem;
 }
 .modal-body-inf-item .kd-time {
-    font-size: 0.2rem;
+    font-size: 0.26rem;
     color: #999999;
     line-height: 1.3em;
     text-align: center;
+}
+.modal-body-inf-item .kd-time span:nth-child(2) {
+    font-size: 0.20rem;
 }
 .modal-body-inf-item .kd-time span {
     display: block;
 }
 .modal-body-inf-item .kd-icon {
+    font-size: 0.24rem;
     flex-shrink: 0;
     width: 0.44rem;
     height: 0.44rem;
