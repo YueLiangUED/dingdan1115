@@ -74,6 +74,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 0.8rem;
+    padding: 0 0.4rem;
     background-color: #fff;
     border-bottom: 0.5px solid #e8e8e8;
 }
