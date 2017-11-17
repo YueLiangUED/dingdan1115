@@ -117,3 +117,28 @@ body {
     text-align: center;
     line-height: 0.6rem;
 }
+.order-selected-phonenum,
+.order-num {
+    font-size: 0.3rem;
+    color: #333333;
+}
+.order-card-panel .goods-name,
+.order-data-panel .goods-name {
+    font-size: 0.3rem;
+}
+.goods-description {
+    line-height: 1.2em;
+    color: #999;
+}
+.order-data-panel .order-panel-total {
+    display: flex;
+    justify-content: space-between;
+}
+.order-data-panel .order-panel-total .order-panel-total-left {
+    font-size: 0.24rem;
+    color: #666;
+}
+.order-panel-total-left span {
+    font-size: 0.24rem;
+    color: #666;
+}

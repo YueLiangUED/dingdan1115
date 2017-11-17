@@ -40,4 +40,15 @@ $(function () {
         $modal.fadeOut('fast');
         $('.mask').fadeOut('fast');
     });
+
+    $('.order-cancel-btn').on('touchend', function (event) {
+        event.preventDefault();
+        var r=confirm("是否取消订单？");
+        if (r==true) {
+            //点击确定 执行
+
+        }else {
+            // 点击取消 执行
+        }
+    });
 });
